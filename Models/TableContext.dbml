@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DevelopmentTest" Class="TableContextDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=RICHARD-PC\SQLEXPRESS;Initial Catalog=DevelopmentTest;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DevelopmentTestConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Customer" Member="Customers">
+    <Type Name="Customer">
+      <Column Name="id" Type="System.Double" DbType="Float NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="first_name" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="last_name" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="street" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="region" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="postal_code" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="country" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="dob" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,130 @@
+USE [master]
+GO
+
+/****** Object:  Database [DevelopmentTest]    Script Date: 12/12/2014 2:18:17 PM ******/
+CREATE DATABASE [DevelopmentTest] ON  PRIMARY 
+( NAME = N'DevelopmentTest', FILENAME = N'c:\Program Files\Microsoft SQL Server\MSSQL10_50.SQLEXPRESS\MSSQL\DATA\DevelopmentTest.mdf' , SIZE = 6144KB , MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
+ LOG ON 
+( NAME = N'DevelopmentTest_log', FILENAME = N'c:\Program Files\Microsoft SQL Server\MSSQL10_50.SQLEXPRESS\MSSQL\DATA\DevelopmentTest_log.ldf' , SIZE = 1024KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)
+GO
+
+ALTER DATABASE [DevelopmentTest] SET COMPATIBILITY_LEVEL = 100
+GO
+
+IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXEC [DevelopmentTest].[dbo].[sp_fulltext_database] @action = 'enable'
+end
+GO
+
+ALTER DATABASE [DevelopmentTest] SET ANSI_NULL_DEFAULT OFF 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET ANSI_NULLS OFF 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET ANSI_PADDING OFF 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET ANSI_WARNINGS OFF 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET ARITHABORT OFF 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET AUTO_CLOSE ON 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET AUTO_SHRINK OFF 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET AUTO_UPDATE_STATISTICS ON 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET CURSOR_CLOSE_ON_COMMIT OFF 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET CURSOR_DEFAULT  GLOBAL 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET CONCAT_NULL_YIELDS_NULL OFF 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET NUMERIC_ROUNDABORT OFF 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET QUOTED_IDENTIFIER OFF 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET RECURSIVE_TRIGGERS OFF 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET  DISABLE_BROKER 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET DATE_CORRELATION_OPTIMIZATION OFF 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET TRUSTWORTHY OFF 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET PARAMETERIZATION SIMPLE 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET READ_COMMITTED_SNAPSHOT OFF 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET HONOR_BROKER_PRIORITY OFF 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET RECOVERY SIMPLE 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET  MULTI_USER 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET PAGE_VERIFY CHECKSUM  
+GO
+
+ALTER DATABASE [DevelopmentTest] SET DB_CHAINING OFF 
+GO
+
+ALTER DATABASE [DevelopmentTest] SET  READ_WRITE 
+GO
+
+
+USE [DevelopmentTest]
+GO
+
+/****** Object:  Table [dbo].[Customer]    Script Date: 12/12/2014 2:14:02 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Customer](
+	[id] [float] NOT NULL,
+	[first_name] [nvarchar](255) NULL,
+	[last_name] [nvarchar](255) NULL,
+	[email] [nvarchar](255) NULL,
+	[phone] [nvarchar](255) NULL,
+	[street] [nvarchar](255) NULL,
+	[city] [nvarchar](255) NULL,
+	[region] [nvarchar](255) NULL,
+	[postal_code] [float] NULL,
+	[country] [nvarchar](255) NULL,
+	[dob] [nvarchar](255) NULL,
+ CONSTRAINT [pk_id] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
