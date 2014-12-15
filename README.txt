@@ -15,6 +15,11 @@ Constraints:
 
 
 Design Summary:
+Libraries Used:
+    JQuery DataTables:  http://datatables.net/manual
+    JQuery:  http://jquery.com/download/
+    BootStrap:  http://getbootstrap.com/
+
 	The MVC model, view, controller pattern is used.
 	Model
 		Data First Code design using LINQ to Sql to gain data Context.  Table data must be 			imported from spreadsheet.  Microsoft SQL Server 2014 express contains the database 			and facilitates the import from spreadsheet.
