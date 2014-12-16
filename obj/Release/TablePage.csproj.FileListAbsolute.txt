@@ -24,3 +24,19 @@ c:\Users\RICHARD\Documents\Visual Studio 2013\Projects\DevTest\TablePage\bin\Sys
 c:\Users\RICHARD\Documents\Visual Studio 2013\Projects\DevTest\TablePage\obj\Release\TablePage.csprojResolveAssemblyReference.cache
 c:\Users\RICHARD\Documents\Visual Studio 2013\Projects\DevTest\TablePage\obj\Release\TablePage.dll
 c:\Users\RICHARD\Documents\Visual Studio 2013\Projects\DevTest\TablePage\obj\Release\TablePage.pdb
+C:\Users\RICHARD\appharbor\MVCTest\bin\TablePage.dll.config
+C:\Users\RICHARD\appharbor\MVCTest\bin\TablePage.dll
+C:\Users\RICHARD\appharbor\MVCTest\bin\TablePage.pdb
+C:\Users\RICHARD\appharbor\MVCTest\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\RICHARD\appharbor\MVCTest\bin\System.Web.Razor.dll
+C:\Users\RICHARD\appharbor\MVCTest\bin\System.Web.WebPages.Deployment.dll
+C:\Users\RICHARD\appharbor\MVCTest\bin\System.Web.WebPages.dll
+C:\Users\RICHARD\appharbor\MVCTest\bin\System.Web.WebPages.Razor.dll
+C:\Users\RICHARD\appharbor\MVCTest\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\RICHARD\appharbor\MVCTest\bin\System.Web.Razor.xml
+C:\Users\RICHARD\appharbor\MVCTest\bin\System.Web.WebPages.xml
+C:\Users\RICHARD\appharbor\MVCTest\bin\System.Web.WebPages.Deployment.xml
+C:\Users\RICHARD\appharbor\MVCTest\bin\System.Web.WebPages.Razor.xml
+C:\Users\RICHARD\appharbor\MVCTest\obj\Release\TablePage.csprojResolveAssemblyReference.cache
+C:\Users\RICHARD\appharbor\MVCTest\obj\Release\TablePage.dll
+C:\Users\RICHARD\appharbor\MVCTest\obj\Release\TablePage.pdb
